@@ -11,7 +11,7 @@ resource "oci_containerengine_node_pool" "oke-node-pool" {
       subnet_id           = oci_core_subnet.vcn-private-subnet.id
     }
 
-    size = 3  # Initial size of the node pool
+    size = 1  # Initial size of the node pool
   }
 
   node_shape = "VM.Standard2.1"
